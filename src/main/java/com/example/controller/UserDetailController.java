@@ -25,13 +25,20 @@ public class UserDetailController {
 	
 	@GetMapping("/detail/{userId:.+}")
 	public String getUser(UserDetailForm form, Model model, @PathVariable("userId") String userId) {
+		
+		// ユーザーを1件取得
 		MUser user = userService.getUserOne(userId);
 		user.setPassword(null);
 		
+		// Userをformに変換
 		form = modelMapper.map(user, UserDetailForm.class);
+		form.setSalaryList(user.getSalaryList());
 		
+		// modelに登録
 		model.addAttribute("userDetailForm", form);
 		
+		
+		// ユーザー詳細画面を表示
 		return "user/detail";
 	}
 	
