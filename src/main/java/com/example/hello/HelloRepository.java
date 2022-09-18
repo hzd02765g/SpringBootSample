@@ -1,4 +1,4 @@
-package com.example.demo.hello;
+package com.example.hello;
 
 import java.util.Map;
 
