@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>SpringBootSample10-2-3</artifactId>
+	<artifactId>SpringBootSample11-2-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBootSample10-2-3</name>
+	<name>SpringBootSample11-2-1</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -107,6 +107,16 @@
 		<dependency>
 		    <groupId>org.aspectj</groupId>
 		    <artifactId>aspectjweaver</artifactId>
+		</dependency>
+		<!-- SpringSecurity -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!-- Thyemeleaf拡張ライブラリ（セキュリティ） -->
+		<dependency>
+		    <groupId>org.thymeleaf.extras</groupId>
+		    <artifactId>thymeleaf-extras-springsecurity5</artifactId>
 		</dependency>
 	</dependencies>
 
